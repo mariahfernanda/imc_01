@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Calculo IMC"
+        android:textSize="32dp"/>
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/altura"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Altura"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/peso"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Peso"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/calcularImc"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/rosa"
+            android:text="Verificar IMC"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        android:textSize="30dp"
+        />
+
+
+</LinearLayout>
